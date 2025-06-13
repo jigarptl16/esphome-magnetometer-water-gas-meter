@@ -378,3 +378,9 @@ sensor:
       - or:
           - throttle: 60s
           - delta: 0
+          
+  - platform: wifi_signal
+    name: RSSI
+    id: wifi_signal_db
+    update_interval: 60s
+    entity_category: "diagnostic"
